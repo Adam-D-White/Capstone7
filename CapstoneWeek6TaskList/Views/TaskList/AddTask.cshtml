@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "AddTask";
+}
+ 
+<h2>Add Task</h2>
+@model CapstoneWeek6TaskList.Models .StoreTask
+<form action="../TaskList/SaveNewTask" method="post">
+
+    <div>
+        Task Description: <input type="text" name="Description" /><br />
+        Task Due Date: <input type="date" name="Due_Date" /><br />
+        Task Status - N or C: <input type="text" name="Status" /><br />
+        N = Not Complete<br />
+        C = Complete<br />
+
+                    <input type="submit" value="Add New Task" />
+    </div>
+    
+
+</form>
+

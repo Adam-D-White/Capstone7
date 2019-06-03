@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Tasks";
+}
+
+<h2>Tasks</h2>
+<form action="../TaskList/AddTask" method="post"><input type="submit" value="Add New Task" /></form>
+<br />
+<br />
+@foreach (var task in ViewBag.Task)
+{
+<div class="col-md-3">
+    <p>Description :@task.Description</p>
+    <p>Date Due: : @task.Date_Due</p>
+    Status : @task.Status
+    @*<input type="radio" name="Complete" value="Complete" /> Completed
+    <input type="radio" name="NotComplete" value="Not Complete" /> Not Complete
+    <input type="submit" value="Update Status" />*@
+    @*<a href="..\Northwind\UpdateProduct?ProductID=@task.Id" class="btn-primary">Update </a>
+        <a href="..\Northwind\DeleteProduct?ProductID=@task.Id" class="btn-danger">Delete</a>*@
+</div>
+}
+
+    
+
+    

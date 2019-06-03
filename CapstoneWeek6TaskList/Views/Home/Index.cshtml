@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h1>Please Log In Or Create New User</h1>
+<form action="../TaskList/AddUser" method="post"><input type="submit" value="Create User" /></form>
+
+<br />
+<br />
+<br />
+<form action="../TaskList/Tasks" method="post">
+
+    <div>
+        <p>Please Enter Email <input type="text" name="Email" required /></p><br />
+        <p>Please Enter A Password <input type="text" name="Password" required /></p><br />
+        <input type="submit" value="Log In" />
+        
+
+    </div>
+    
+
+</form>
